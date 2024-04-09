@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.login-container,
+.signup-container {
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: auto;
+    margin-top: 15rem;
+    background-color: grey;
+    padding: 2rem;
+}
+
+.login-container h3,
+.signup-container h3 {
+    text-align: center;
+}
+
+.login-container input,
+.login-container button,
+.signup-container input,
+.signup-container button {
+    outline: none;
+    padding: 0.6rem;
+    border-radius: 0.3rem;
+    border: none;
+    opacity: 0.8;
+}
+
+.login-container button,
+.signup-container button {
+    background-color: rgb(174, 173, 173);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.login-container>p,
+.signup-container>p {
+    font-style: italic;
+}
+
+.login-container .register-here,
+.login-container .login-here,
+.signup-container .register-here,
+.signup-container .login-here {
+    font-style: normal;
+    color: purple;
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.signup-container {
+    display: none;
+}
+
+.signup-container>div {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.signup-container>div>input {
+    flex-grow: 1;
+}
+
+.signup-container #otp-verify {
+    width: 40%;
+    border-radius: 0.3rem;
+    border: none;
+}
+
+.signup-container .generate-otp-btn {
+    width: 10rem;
+    background-color: rgb(211, 207, 207);
+    border: none;
+    padding: 0.6rem;
+    border-radius: 0.3rem;
+}
+
+/*# sourceMappingURL=login-style.css.map */

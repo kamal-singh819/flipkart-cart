@@ -1,0 +1,150 @@
+$dark-blue-color: #023047;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1.2rem 1rem;
+    background-color: white;
+    z-index: 5;
+
+    .flipkart-logo {
+        width: 6rem;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .search-bar {
+        grid-column: 1/5;
+        grid-row: 2/3;
+
+        .search {
+            width: 100%;
+            outline: none;
+            font-size: 1rem;
+            padding: 0.6rem 0.8rem;
+            border-radius: 0.3rem;
+            border: none;
+            background-color: #F0F5FF;
+        }
+    }
+
+    .user-name {
+        text-align: center;
+        font-size: 1rem;
+        font-style: italic;
+    }
+
+    .login-button {
+        text-decoration: none;
+        background-color: $dark-blue-color;
+        padding: 0.2rem 0.5rem;
+        border-radius: 0.3rem;
+        color: white;
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    .logout-button {
+        font-size: 0.9rem;
+        padding: 0.2rem 0.5rem;
+        border-radius: 0.3rem;
+        border: none;
+        background-color: $dark-blue-color;
+        color: white;
+        cursor: pointer;
+        text-align: center;
+        display: none;
+    }
+
+    .cart-image {
+        cursor: pointer;
+        text-align: center;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+
+        .cart-icon {
+            height: 1.8rem;
+            width: 1.8rem;
+        }
+
+        .count-in-cart {
+            position: relative;
+            bottom: -8px;
+            height: 1.2rem;
+            width: 1.2rem;
+            font-size: 0.8rem;
+            background-color: $dark-blue-color;
+            border-radius: 50%;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+@media (min-width: 600px) {
+    .header {
+        grid-template-columns: 1fr 7fr 2fr 1fr 1fr;
+        grid-template-rows: 1fr;
+
+        .flipkart-logo {
+            width: 8rem;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .search-bar {
+            grid-column: 2/3;
+            grid-row: 1/2;
+
+            .search {
+                width: 90%;
+                outline: none;
+                font-size: 1.2rem;
+                padding: 0.6rem 1rem;
+                border-radius: 0.3rem;
+                border: none;
+                background-color: #F0F5FF;
+            }
+        }
+
+        .user-name {
+            text-align: center;
+            font-size: 1.2rem;
+        }
+
+        .login-button,
+        .logout-button {
+            font-size: 1.2rem;
+        }
+
+        .cart-image {
+            text-align: center;
+
+            .cart-icon {
+                height: 2.3rem;
+                width: 2.3rem;
+            }
+
+            .count-in-cart {
+                height: 1.4rem;
+                width: 1.4rem;
+                font-size: 1rem;
+            }
+        }
+    }
+}

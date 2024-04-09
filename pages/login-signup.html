@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registeration</title>
+    <link rel="stylesheet" href="../styles/login-style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("Y5lBetFulsC5KSm_B");
+        })();
+    </script>
+</head>
+
+<body>
+    <div class="login-container">
+        <h3>Login Here</h3>
+        <input id="login-email" type="email" placeholder="Email" required>
+        <input id="login-password" type="password" placeholder="Password" required>
+        <button id="login-btn" type="submit"> Login </button>
+        <p>Don't have account <a class="register-here">Register here</a></p>
+    </div>
+    <div class="signup-container" id="myForm" method="post">
+        <h3>Register Yourself</h3>
+        <input id="full-name" type="text" name="name" placeholder="Full Name" required>
+        <input id="email" name="email" type="email" placeholder="Email" required>
+        <button class="generate-otp-btn" type="submit">Get OTP</button>
+        <div>
+            <input id="enter-otp" type="text" placeholder="Enter OTP" required>
+            <button id="otp-verify" type="submit">Verify OTP</button>
+        </div>
+        <input id="password" type="password" placeholder="Create Password" required>
+        <button id="register-btn" type="submit"> Register </button>
+        <p>Already Registered <a class="login-here">Login Here</a></p>
+    </div>
+    <script src="../js/login.mjs" type="text/javascript"></script>
+    </script>
+</body>
+
+</html>

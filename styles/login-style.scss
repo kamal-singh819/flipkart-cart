@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.login-container,
+.signup-container {
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: auto;
+    margin-top: 15rem;
+    background-color: grey;
+    padding: 2rem;
+
+    h3 {
+        text-align: center;
+    }
+
+    input,
+    button {
+        outline: none;
+        padding: 0.6rem;
+        border-radius: 0.3rem;
+        border: none;
+        opacity: 0.8;
+    }
+
+    button {
+        background-color: rgb(174, 173, 173);
+        font-weight: 700;
+        cursor: pointer;
+    }
+
+    >p {
+        font-style: italic;
+    }
+
+    .register-here,
+    .login-here {
+        font-style: normal;
+        color: purple;
+        cursor: pointer;
+        text-decoration: underline;
+        font-weight: 600;
+    }
+}
+
+.signup-container {
+    display: none;
+
+    >div {
+        display: flex;
+        gap: 0.5rem;
+
+        >input {
+            flex-grow: 1;
+        }
+    }
+
+    #otp-verify {
+        width: 40%;
+        border-radius: 0.3rem;
+        border: none;
+    }
+
+    .generate-otp-btn {
+        width: 10rem;
+        background-color: rgb(211, 207, 207);
+        border: none;
+        padding: 0.6rem;
+        border-radius: 0.3rem;
+    }
+}

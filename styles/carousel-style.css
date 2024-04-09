@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.carousel-container {
+  position: relative;
+}
+.carousel-container .carousel-images {
+  display: flex;
+  overflow: hidden;
+}
+.carousel-container .carousel-images > img {
+  flex: 1;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.carousel-container .carousel-dots {
+  position: absolute;
+  bottom: 0.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.carousel-container .carousel-dots > .dot {
+  display: inline-block;
+  height: 0.4rem;
+  width: 0.4rem;
+  margin: 0 0.1rem;
+  background-color: #9f86c0;
+  border-radius: 50%;
+}
+.carousel-container .carousel-dots > .dot:first-child {
+  background-color: black;
+}
+
+@media (min-width: 768px) {
+  .carousel-container .carousel-dots > .dot {
+    height: 0.6rem;
+    width: 0.6rem;
+  }
+}/*# sourceMappingURL=carousel-style.css.map */
